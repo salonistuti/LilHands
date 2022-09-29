@@ -1,58 +1,126 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Patient Registration</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Information</title>
+	<head>
+		<meta charset="utf-8">
+		<title>Formicon-Flat Forms Pack</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="icons/styles.css">
+		<link rel="stylesheet" href="css/bootstrap-custom.css">
+		<link rel="stylesheet" href="css/registration-form.css">
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+		<div class="form-wrapper"> <!-- Form-wrapper only for positioning -->
+			<form action="#non" method="post" class="fcorn-register container">
+					<center>
+						<img id="lilhands" src="Lilhands.jpg" alt="">
+					</center>
+				<p class="register-info">Note: All fields are required.</p>
+				<div class="row">
+					<p class="col-md-6"><input type="text" placeholder="First Name" required></p>
+					<p class="col-md-6"><input type="text" placeholder="Last Name" required></p>
+				</div>
+				<p><input type="email" placeholder="Email Address" required>
+				   <span class="extern-type">We'll keep this private.</span>
+				</p>
+				<div>
+                    <p>Patient's Blood Group:</p>
+                    <input type="radio" id="html" name="blood_group" value="A+">
+                    <label for="html">A+</label><br>
+                    <input type="radio" id="css" name="blood_group" value="B+">
+                    <label for="css">B+</label><br>
+                    <input type="radio" id="javascript" name="blood_group" value="AB+">
+                    <label for="javascript">AB+</label>
+                    <br>
+                    <input type="radio" id="html" name="blood_group" value="O+">
+                    <label for="html">O+</label><br>
+                    <input type="radio" id="html" name="blood_group" value="A-">
+                    <label for="html">A-</label><br>
+                    <input type="radio" id="html" name="blood_group" value="B-">
+                    <label for="html">B-</label><br>
+                    <input type="radio" id="html" name="blood_group" value="AB-">
+                    <label for="html">AB-</label><br>
+                    <input type="radio" id="html" name="blood_group" value="O-">
+                    <label for="html">O-</label><br>
+                </div>
+				<br>
+				<div>
+                    <label for="birthday">Birthday:</label><br>
 
-  <body>
-    <div class="grid">
-      <div class="grid-item">
-        <div class="card">
-          <img class="card-img" src="https://www.wellandgood.com/wp-content/uploads/2018/11/GettyImages-pregnancy-skin-care-d3sign.jpg" alt="Rome" />
-          <div class="card-content">
-            <h1 class="card-header"><strong>Skin Care</strong></h1>
-            <p class="card-text">
-              Finding pregnancy safe skincare can be a daunting task, especially with the upsurge of hormones and constant fatigue. We know your pain and here we are to assist you. Take a look.
-            </p>
-            <a href="skincare.html"><button class="card-btn">Visit <span>&rarr;</span></button></a>
-              
-
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <div class="card">
-          <img
-            class="card-img"
-            src="https://www.babycentre.co.uk/ims/2012/09/stk_babyspath_BPH028_master_wide.jpg"
-            alt="Grand Canyon"
-          />
-          <div class="card-content">
-            <h1 class="card-header"><strong>Medicines</strong></h1>
-            <p class="card-text">
-              Although some medications are considered safe to, the effects of other medications on your unborn baby are unknown. It is very imp to pay attention to medications you take while you are pregnant. 
-            </p>
-            <a href="medicines.html"><button class="card-btn">Visit <span>&rarr;</span></button></a>
-          </div>
-        </div>
-      </div>
-      <div class="grid-item">
-        <div class="card">
-          <img class="card-img" src="https://media.istockphoto.com/photos/baby-goods-baby-goods-for-boys-collection-picture-id886701938?k=20&m=886701938&s=612x612&w=0&h=mYssLTYsSunqPRc9-c0lD727YP1c_VPGw0ZYVjpVVKE=" alt="Maldives" />
-          <div class="card-content">
-            <h1 class="card-header"><strong>Baby Products</strong></h1>
-            <p class="card-text">
-              Wondering how to figure out which are the baby items to skip and which are the essential baby items you can’t live without? 
-              Don’t stress! Keep reading for the complete list of things you need.
-            </p>
-            <button class="card-btn">Visit <span>&rarr;</span></button>
-          </div>
-        </div>
-      </div>
+                    <input type="date" id="birthday" name="Birthday">
+                </div>
+				<br>
+				<div>
+                    <textarea id="w3review" name="w3review" rows="7" cols="80" placeholder="Any history of prescription or illness" ></textarea>
+                </div>
+				<br>
+				<p><input type="password" placeholder="Password" required>
+					<span class="extern-type">Atleast 8 characters long.</span>
+				</p>
+				<p><input type="password" placeholder="Verify Password" required></p>
+				
+				<div class="row">
+					<p class="col-md-6 city-wrap">
+						<select>
+							<option value="0" selected disabled>City</option>
+							<option value="1">San José</option>
+						</select>
+					</p>
+					<p class="col-md-6 country-wrap">
+						<!-- Add more country name -->
+						<select>
+							<option value="0" selected disabled>Country</option>
+							<option value="1">U.S. Only</option>
+							<option value="2">Outside U.S.</option>
+						</select>
+					</p>
+          <div> 
+            <p class="col-xs-12"><form action="upload.php" method="post" enctype="multipart/form-data">
+            Upload your personal photo:
+              <input type="file" name="fileToUpload" id="fileToUpload">
+              <input type="submit" value="Upload Image" name="submit" required>
+           </p>
+				</div>
+          <br/>
+				<p class="register-toggle">
+					<label for="register-agree" class="toggle-label" data-on="YES" data-off="NO">
+						<input type="checkbox" id="register-agree" class="toggle-input">
+						<span class="toggle-handle"></span>
+					</label>
+					<span class="info">Do you agree to the <a href="#">terms and conditions?</a></span>
+				</p>
+				<p class="register-submit"><input type="submit" value="Register Now"></p>
+			</form>
     </div>
-  </body>
+    
+    
+	
+
+
+
+		<!-- This is a placeholder fallback for IE9 browser -->
+		<!-- For IE9 and below - placeholder fallback-->
+		<!--[if lt IE 10]>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="jquery.placeholder.min.js"></script>
+			<script type="text/javascript">
+				$('input, textarea').placeholder();
+			</script>
+		<![endif]-->
+	</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
 </html>
