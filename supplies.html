@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="supplies.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <h1>Supplies Checklist</h1>
+            <h2>The baby is almost here!</h2>
+            <hr>
+        </div>
+        <h4>Mom Supplies:</h4>
+        <div class="row">
+            <p></p>
+        </div>
+
+        <div class="row">
+            <input id="im" name="im" type="checkbox" onclick="save(this.id)">
+            <label for="im">Large sanitary pads (XXL or XL)</label>
+        </div>
+        <div class="row">
+            <input id="ih" name="ih" type="checkbox" onclick="save(this.id)">
+            <label for="ih">Disposable panties</label>
+        </div>
+        <div class="row">
+            <input id="im2" name="im2" type="checkbox" onclick="save(this.id)">
+            <label for="im2">Disposable cups and straws</label>
+        </div>
+        <div class="row">
+            <input id="th" name="th" type="checkbox" onclick="save(this.id)">
+            <label for="th">Slippers</label>
+        </div>
+        <div class="row" class="space">
+            <input id="ca" name="ca" type="checkbox" onclick="save(this.id)">
+            <label for="ca" class="space">Wash Towels
+            </label>
+        </div>
+        <div class="row">
+            <input id="av" name="av" type="checkbox" onclick="save(this.id)">
+            <label for="av">Dental hygiene kit</label>
+        </div>
+        <div class="row">
+            <input id="s1" name="s1" type="checkbox" onclick="save(this.id)">
+            <label for="s1">Skincare products</label>
+        </div>
+        <div class="row">
+            <input id="s2" name="s2" type="checkbox" onclick="save(this.id)">
+            <label for="s2">Toiletries</label>
+        </div>
+        <div class="row">
+            <input id="s4" name="s4" type="checkbox" onclick="save(this.id)">
+            <label for="s4">Two sets of nursing pyjamas, nursing bras, some underwear</label>
+        </div>
+        <div class="row">
+            <input id="s3" name="s3" type="checkbox" onclick="save(this.id)">
+            <label for="s3">Discharge clothing</label>
+        </div>
+        <h4>Baby Supplies:</h4>
+        <div class="row">
+            <p><u>Clothing Items</u></p>
+        </div>
+
+        <div class="row">
+            <input id="im3" name="im3" type="checkbox" onclick="save(this.id)">
+            <label for="im3">2 overalls</label>
+        </div>
+        <div class="row">
+            <input id="th2" name="th2" type="checkbox" onclick="save(this.id)">
+            <label for="th2" class="reality">2 pairs of socks
+            </label>
+        </div>
+        <div class="row">
+            <input id="ca2" name="ca2" type="checkbox" onclick="save(this.id)">
+            <label for="ca2">2 pair of gloves</label>
+        </div>
+        <div class="row">
+            <input id="gg" name="gg" type="checkbox" onclick="save(this.id)">
+            <label for="gg" class="power">2 baby hats
+
+            </label>
+        </div>
+        <div class="row">
+            <input id="av2" name="av2" type="checkbox" onclick="save(this.id)">
+            <label for="av2" class="mind">Quilt and extra sheets and blankets
+
+            </label>
+        </div>
+        <div class="row">
+            <input id="am" name="am" type="checkbox" onclick="save(this.id)">
+            <label for="am">2-3 hats</label>
+        </div>
+        <div class="row">
+            <input id="s5" name="s5" type="checkbox" onclick="save(this.id)">
+            <label for="s5">Wet baby wipes and soft cotton towels for the baby</label>
+        </div>
+
+
+        <div class="row">
+            <p><u>Skincare:</u></p>
+        </div>
+
+        <div class="row">
+            <input id="ca3" name="ca3" type="checkbox" onclick="save(this.id)">
+            <label for="ca3">Eczema Cream</label>
+        </div>
+        <div class="row">
+            <input id="ds" name="ds" type="checkbox" onclick="save(this.id)">
+            <label for="ds" class="time">Baby Bath and Body products set
+
+            </label>
+        </div>
+        <div class="row">
+            <p><u>Food Utensils:</u></p>
+        </div>
+
+        <div class="row">
+            <input id="s6" name="s6" type="checkbox" onclick="save(this.id)">
+            <label for="s6">2 baby bottles</label>
+        </div>
+        <div class="row">
+            <input id="s7" name="s7" type="checkbox" onclick="save(this.id)">
+            <label for="s7" class="time">Baby safe bowls, plates and spoons
+            </label>
+        </div>
+        <h4>Documents:</h4>
+
+        <div class="row">
+            <input id="s8" name="s8" type="checkbox" onclick="save(this.id)">
+            <label for="s8">Medical Records</label>
+        </div>
+        <div class="row">
+            <input id="s9" name="s9" type="checkbox" onclick="save(this.id)">
+            <label for="s9" class="time">Cash and ATM card
+
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>You have packed <span id="watchedPercentage">0</span>% of necessary supplies.</p>
+        <div id="result">
+            <div id="progress"></div>
+        </div>
+    </div>
+    <script src="supplies.js"></script>
+</body>
