@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+    background-color: mintcream;
+    color: darkslategray;
+}
+
+div.container {
+    min-width: 90vw;
+    padding: 1vw;
+    padding-top: 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#result {
+    border: 1px solid darkslategray;
+    width: 100%;
+    height: 2vh;
+}
+
+#result #progress {
+    height: 100%;
+    transition: width 0.5s, background-color 0.25s;
+}
+
+.gem {
+    width: 1em;
+    height: 1em;
+    fill: darkslategray;
+}
+
+svg.space {
+    fill: skyblue;
+}
+
+.space:hover {
+    transition: color 0.25s;
+    color: skyblue;
+}
+
+svg.mind {
+    fill: darkorange;
+}
+
+.mind:hover {
+    transition: color 0.25s;
+    color: darkorange;
+}
+
+svg.reality {
+    fill: firebrick;
+}
+
+.reality:hover {
+    transition: color 0.25s;
+    color: firebrick;
+}
+
+svg.power {
+    fill: rebeccapurple;
+}
+
+.power:hover {
+    transition: color 0.25s;
+    color: rebeccapurple;
+}
+
+svg.time {
+    fill: limegreen;
+}
+
+.time:hover {
+    transition: color 0.25s;
+    color: limegreen;
+}
+
+a#twitter-share {
+    background-color: #1b95e0;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+a#twitter-share:hover {
+    background-color: #319fe3;
+}
